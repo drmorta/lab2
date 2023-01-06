@@ -1,0 +1,56 @@
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+body {
+background-color: #E2D1F9;
+}
+h1 {
+  background-color:hsl(176, 56%, 49%);
+  text-align: center;
+  font-size: 36px;
+  border-style: groove;
+}
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 20px; 
+}
+p {
+ font-family: Calibri;
+ font-size: 20px;
+ text-align: center;
+ margin: 10px;
+ background-color: #4DAEA8;
+}
+	
+article {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+<<<<<<< HEAD
+  padding-right: 15px;
+=======
+  padding-right: 20px;
+>>>>>>> 676f22681d616c4c7de008468335d15b214e33e8
+  border: 2px solid red;
+  border-radius: 8px;
+
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 40%;
+  border-radius: 30%;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 676f22681d616c4c7de008468335d15b214e33e8
