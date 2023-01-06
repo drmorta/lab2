@@ -33,7 +33,11 @@ article {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
+<<<<<<< HEAD
+  padding-right: 15px;
+=======
   padding-right: 20px;
+>>>>>>> 676f22681d616c4c7de008468335d15b214e33e8
   border: 2px solid red;
   border-radius: 8px;
 
@@ -45,4 +49,8 @@ article {
   width: 40%;
   height: 40%;
   border-radius: 30%;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 676f22681d616c4c7de008468335d15b214e33e8
