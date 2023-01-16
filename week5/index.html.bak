@@ -58,7 +58,10 @@ What do you expect to learn from this course (Web Programming)? I expect to lear
 <img id="photo"> 
 <br>
 <button onclick="document.getElementById('photo').style.display='none'">Click to hide my sample shot</button>
+<br>
 <button onclick="newWindow()">Open a New Window</button>
+<br>
+<button onclick="window.print()">Print the website</button>
 </div>
 
 <div class="footer">
