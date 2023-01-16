@@ -15,8 +15,9 @@ const d = new Date()
 	<img src="me.jpeg" alt="What I look like" class="image"> 
 <h2>Nickname: Danni </h2>
 <h3>Age: 20</h3>
-<h4><button type="button" onclick="alert(d)">Time check</button></h4>
+
 <section>
+<h4><button type="button" onclick="alert(d)">Time check</button></h4>
 <p>
 <b>Senior High School Graduate From? City the High School is located at? Course?</b><br>
 Graduated Senior High School from Asia Pacific College located in Makati City with a course from STEM-IT.
@@ -47,10 +48,17 @@ What do you expect to learn from this course (Web Programming)? I expect to lear
 </p>
 
 </section>
+<h4> JavaScript Buttons </h4>
+<div class="photos">
+<button onclick="document.getElementById('photo').src='NM.png'">Click to show my sample shot</button>
+<img id="photo"> 
+<br>
+<button onclick="document.getElementById('photo').style.display='none'">Click to hide my sample shot</button>
+</div>
+
 <div class="footer">
-<p> 
 <a href="resources.html"> My Resources </a>
-</p>
+
 </div>
 </body>
 <!-- Body End -->
