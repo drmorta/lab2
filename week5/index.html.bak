@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="style.css">
 <title> Personal Website </title>
 <script>
-const d = new Date()
+
 </script>
 </head>
 <!-- Head End -->
@@ -15,7 +15,7 @@ const d = new Date()
 	<img src="me.jpeg" alt="What I look like" class="image"> 
 <h2>Nickname: Danni </h2>
 <h3>Age: 20</h3>
-<h4><button type="button" onclick="alert(d)">Time check</button></h4>
+
 <section>
 <p>
 <b>Senior High School Graduate From? City the High School is located at? Course?</b><br>
