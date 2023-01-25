@@ -8,5 +8,7 @@ const me = {
         firstName: "Danni Raphael",
         lastName: "Morta",
         age: 20,
-        eyeColor: "blue"
       };
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+    };
