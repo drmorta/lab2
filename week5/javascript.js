@@ -16,3 +16,9 @@ const me = {
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
     };
+// Window Width
+function windowColor() {
+    document.getElementById("colors").innerHTML =
+    "Screen Color Depth: " + screen.colorDepth;
+    };
+ 
