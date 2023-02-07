@@ -1,80 +1,199 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title> Personal Website </title>
-      <script defer src="javascript.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title> Personal Website ni Danni </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+    <style>
+.error {color: #FF0000;}
+</style>
 </head>
-<!-- Head End -->
+
 <body>
+    <header>
+    <nav>
+        <ul class="nav_link">
+                <li><a data-link="WelcomePart" class="scroll_to">Home</a></li>
+                <li><a data-link="AboutPart" class="scroll_to">About Me</a></li>
+                <li><a data-link="SamplePart" class="scroll_to">Sample Shots</a></li>
+                <li><a data-link="ContactPart" class="scroll_to">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
 
-      <h1>Introduction</h1>
-	<img src="me.jpeg" alt="What I look like" class="image"> 
-      <h2>Nickname: Danni </h2>
-      <h3>Age: 20</h3>
+<!--Welcome part--> 
+<section class="WelcomeSection" id="WelcomePart">
+    <p class="Welcome"><span class="auto-type"></span></p>
+</section>
 
-<section>
+<!--About part-->
+<section class="AboutSection" id="AboutPart">
+        <div class = "title">
+            <h1> About Me </h1>
+        </div>
+        
+        <div class = "AboutMeSection">
+            <div><img src= "pictures/me.jpeg"></div>
+            <div>
+                <h1>I'm Danni Raphael R. Morta</h1>
+                <br>
+                
+                <p> I am currently 20 years old and is studying at Asia Pacific College. I am a second year college student under the course of BS Information Technology with specialization in Mobile and Internet techonology. I love taking photos as a hobby and also loves to play video games</p>
+            </div>
+        </div>
+    </section>
 
-      <p>
-      <b>Senior High School Graduate From? City the High School is located at? Course?</b><br>
-      Graduated Senior High School from Asia Pacific College located in Makati City with a course from STEM-IT.
-      <br>
-      <br>
-      <b>Scholarship? Yes/No If yes, %? Type?</b><br>
-      I have a scholarship, public high school graduate scholarship since I am from a public high school in junior high school. It has 50% discount in my tuition.
-      <br>
-      <br>
-      <b>Transferee/Second course?</b><br>
-      No. Second course option was BSCS.
-      <br>
-      <br>
-      <b>Did you choose this course? Yes/ NO Why Yes?</b><br>
-      I chose this course because it aligns with my interest which are computers in general and I want to learn more about my interest with this course.
-      <br>
-      <br>
-      <b>I.T Experience: Programming/ Gaming/ Others:</b><br>
-      First programming experience in a seminar in UE, then in senior high school at bootcamp and then in college.
-      <br>
-      <br>
-      <b>Hobbies/ Interest/ libangan:</b><br>
-      Gaming, watching movies or series, listening to music and reading manga
-      <br>
-      <br>
-      <b>Goals in life/Pangarap sa buhay: As of now, my goal is just to graduate college together with my classmates and hopefully find a stable job in a work that I will surely be enjoying.</b><br>
-      What do you expect to learn from this course (Web Programming)? I expect to learn from this subject about basic and advance web programming as I need to study some of them again as building a website can be a great skill in my course.
-      </p>
+<!--Sample Shots-->
+
+<section class="SampleSection" id="SamplePart">
+<div class="container">
+<div class = "title">
+            <h1> Sample Shots </h1>
+        </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="pictures/NM.png" alt="National Museum of Fine Arts" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>National Museum of Fine Arts</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="pictures/intra.png" alt="Intramuros Park" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Intramuros Park</h3>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="pictures/pangasinan.png" alt="Pangasinan" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Pangasinan</h3>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
 </section>
-<h4> JavaScript Buttons </h4>
 
-<div class="photos">
-<button type="button" onclick="alert(d)">Time check</button>
-<br>
-<button onclick="document.getElementById('photo').src='NM.png'">Click to show my sample shot</button>
-<img id="photo"> 
-<br>
-<button onclick="document.getElementById('photo').style.display='none'">Click to hide my sample shot</button>
-<br>
-<button onclick="newWindow()">Open a New Window</button>
-<br>
-<button onclick="window.print()">Print the website</button>
-<br>
-<li id="demo"></li><br>
-<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,999999)">Click Me to Generate a random number</button>
-<br>
-<li id="colors"></p>
-<button onclick="windowColor()">Click me to see color depth</button>
-<br>
-<li id="messages"></p>
-<button onclick="messageFunction()">Click me to prompt an alert box</button>
-<br>   
-</div>
+<!--Contact-->
+<section class="ContactSection" id="ContactPart">
+    <?php
+  // define variables and set to empty values
+  $nameErr = $emailErr = $genderErr = $websiteErr = "";
+  $name = $email = $gender = $comment = $website = "";
 
-<div class="footer">
-<a href="resources.html"> My Resources </a>
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+      $nameErr = "Name is required";
+    } else {
+      $name = test_input($_POST["name"]);
+      // check if name only contains letters and whitespace
+      if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+        $nameErr = "Only letters and white space allowed";
+      }
+    }
+    
+    if (empty($_POST["email"])) {
+      $emailErr = "Email is required";
+    } else {
+      $email = test_input($_POST["email"]);
+      // check if e-mail address is well-formed
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+      }
+    }
+      
+    if (empty($_POST["website"])) {
+      $website = "";
+    } else {
+      $website = test_input($_POST["website"]);
+      // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
+      if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+        $websiteErr = "Invalid URL";
+      }
+    }
 
-</div>
+    if (empty($_POST["comment"])) {
+      $comment = "";
+    } else {
+      $comment = test_input($_POST["comment"]);
+    }
+
+    
+  }
+
+  function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+  ?>
+
+  <h2>Contact Me!</h2>
+  <p><span class="error">* required field</span></p>
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+    Name: <br><input type="text" name="name" value="<?php echo $name;?>">
+    
+    <span class="error">* <?php echo $nameErr;?></span>
+    <br><br>
+    E-mail: <br>
+    <input type="text" name="email" value="<?php echo $email;?>">
+    <span class="error">* <?php echo $emailErr;?></span>
+    <br><br>
+    Website: <br>
+    <input type="text" name="website" value="<?php echo $website;?>">
+    <span class="error"><?php echo $websiteErr;?></span>
+    <br><br>
+    Comment: <br>
+    <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">  
+  </form>
+
+  <?php
+  echo "<h2>Your Input:</h2>";
+  echo $name;
+  echo "<br>";
+  echo $email;
+  echo "<br>";
+  echo $website;
+  echo "<br>";
+  echo $comment;
+  echo "<br>";
+  ?>
+</section>
+
 </body>
-<!-- Body End -->
 </html>
