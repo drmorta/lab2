@@ -108,7 +108,7 @@
 
 <!--Contact-->
 <section class="ContactSection" id="ContactPart">
-    <?php
+<?php
   // define variables and set to empty values
   $nameErr = $emailErr = $genderErr = $websiteErr = "";
   $name = $email = $gender = $comment = $website = "";
@@ -133,24 +133,12 @@
         $emailErr = "Invalid email format";
       }
     }
-      
-    if (empty($_POST["website"])) {
-      $website = "";
-    } else {
-      $website = test_input($_POST["website"]);
-      // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-      if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-        $websiteErr = "Invalid URL";
-      }
-    }
 
     if (empty($_POST["comment"])) {
       $comment = "";
     } else {
       $comment = test_input($_POST["comment"]);
     }
-
-    
   }
 
   function test_input($data) {
@@ -159,22 +147,17 @@
     $data = htmlspecialchars($data);
     return $data;
   }
-  ?>
+?>
 
   <h2>Contact Me!</h2>
   <p><span class="error">* required field</span></p>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
     Name: <br><input type="text" name="name" value="<?php echo $name;?>">
-    
     <span class="error">* <?php echo $nameErr;?></span>
     <br><br>
     E-mail: <br>
     <input type="text" name="email" value="<?php echo $email;?>">
     <span class="error">* <?php echo $emailErr;?></span>
-    <br><br>
-    Website: <br>
-    <input type="text" name="website" value="<?php echo $website;?>">
-    <span class="error"><?php echo $websiteErr;?></span>
     <br><br>
     Comment: <br>
     <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
@@ -182,17 +165,36 @@
     <input type="submit" name="submit" value="Submit">  
   </form>
 
-  <?php
-  echo "<h2>Your Input:</h2>";
-  echo $name;
-  echo "<br>";
-  echo $email;
-  echo "<br>";
-  echo $website;
-  echo "<br>";
-  echo $comment;
-  echo "<br>";
-  ?>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "webprogmi211";
+	
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+	}
+	
+	$sql = "INSERT INTO myGuests (name, comment, email)
+	VALUES ('$name', '$comment', '$email')";
+	
+  if ($conn->query($sql) === TRUE) {
+    echo '<script>alert("New record created successfully")</script>';
+    } else {
+    echo '<script>alert("Error creating a new record")</script>'. $sql . "<br>" . $conn->error;
+    }
+	
+	$conn->close();
+}
+?>
 </section>
 
 </body>
